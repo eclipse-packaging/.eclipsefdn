@@ -16,13 +16,12 @@ orgs.newOrg('eclipse-packaging') {
     web_commit_signoff_required: false,
   },
   webhooks+: [
-    orgs.newWebhook() {
+    orgs.newOrgWebhook('https://ci.eclipse.org/packaging/github-webhook/') {
       content_type: "json",
       events+: [
         "pull_request",
         "push"
       ],
-      url: "https://ci.eclipse.org/packaging/github-webhook/",
     },
   ],
   _repositories+:: [
