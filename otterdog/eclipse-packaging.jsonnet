@@ -31,8 +31,6 @@ orgs.newOrg('eclipse-packaging') {
       default_branch: "master",
       dependabot_alerts_enabled: false,
       has_wiki: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       branch_protection_rules: [
         orgs.newBranchProtectionRule("master") {
