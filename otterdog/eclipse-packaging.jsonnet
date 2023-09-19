@@ -34,6 +34,11 @@ orgs.newOrg('eclipse-packaging') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule("master") {
+          required_approving_review_count: 0,
+        },
+      ],
     },
   ],
 }
