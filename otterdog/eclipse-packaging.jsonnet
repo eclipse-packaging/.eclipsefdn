@@ -26,14 +26,14 @@ orgs.newOrg('eclipse-packaging') {
   ],
   _repositories+:: [
     orgs.newRepo('packages') {
-      allow_merge_commit: false,
       allow_update_branch: false,
       default_branch: "master",
+      delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_wiki: false,
       web_commit_signoff_required: false,
       branch_protection_rules: [
-        orgs.newBranchProtectionRule("master") {
+        orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
         },
       ],
