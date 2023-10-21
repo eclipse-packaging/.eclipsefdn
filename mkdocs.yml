@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-packaging.github.io/.eclipsefdn/
 
+repo_name: eclipse-packaging/.eclipsefdn
+repo_url: https://github.com/eclipse-packaging/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 
