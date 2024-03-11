@@ -26,9 +26,6 @@ orgs.newOrg('eclipse-packaging') {
       dependabot_alerts_enabled: false,
       has_wiki: false,
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           required_approving_review_count: 0,
