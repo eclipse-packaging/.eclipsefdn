@@ -6,7 +6,7 @@ orgs.newOrg('eclipse-packaging') {
     dependabot_security_updates_enabled_for_new_repositories: false,
     description: "Defines Eclipse IDE products for the main Eclipse download page.",
     email: "epp-dev@eclipse.org",
-    name: "Eclipse Packaging Product",
+    name: "Eclipse Packaging Project",
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
