@@ -26,6 +26,7 @@ orgs.newOrg('eclipse-packaging') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
+      description: "General content for the eclipse-packaging organization.",
       web_commit_signoff_required: false,
     },
     orgs.newRepo('packages') {
@@ -33,6 +34,7 @@ orgs.newOrg('eclipse-packaging') {
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
+      description: "Eclipse IDE product definitions.",
       has_discussions: true,
       has_wiki: false,
       web_commit_signoff_required: false,
