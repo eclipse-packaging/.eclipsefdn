@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-packaging') {
+orgs.newOrg('technology.packaging', 'eclipse-packaging') {
   settings+: {
     blog: "https://eclipse.dev/packaging",
     description: "Defines Eclipse IDE products for the main Eclipse download page.",
